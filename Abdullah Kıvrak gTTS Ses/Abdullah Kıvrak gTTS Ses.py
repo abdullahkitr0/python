@@ -2,14 +2,14 @@
 from gtts import gTTS 
 #sistem dosyalarını daha rahat şekilde açmak için
 import os
-
+wtext = input("Kelime : ")
 #Burada kullanacağımız 2 parametre bulunuyor, Dil ve Text
-tts = gTTS(text='Abdullah Kıvrak', lang='tr')
+tts = gTTS(text= wtext , lang='tr')
 #Burada oluşturduğumuz ses dosyasını konuma merhaba.mp3 diye kaydediyoruz
-tts.save("abdullahkıvrak.mp3")
-
+tts.save('ses.mp3') 
 #şimdi ise bu dosyayı açalım.
-os.system("abdullahkıvrak.mp3")
+os.system("ses.mp3")
+
 
 #By Abdullah Kivrak
 #Yasal Hakalrı MIT lisansı Tarafından Korunmaktadır.
